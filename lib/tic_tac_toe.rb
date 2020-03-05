@@ -101,5 +101,10 @@ end
  
  def play
    turn until over?
+   if winner
+     puts "Congrulations #{winner}!"
+   else
+     puts "Cat's Game!"
+   end
  end
 end
